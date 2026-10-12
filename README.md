@@ -1,3 +1,15 @@
+![CineVerse Night — Cinematic Movie Discovery](assets/cineverse-banner.png)
+
+<div align="center">
+
+**Your next favorite movie awaits.**
+
+Discover movies. Explore genres. Build your watchlist.
+
+</div>
+
+---
+
 # 🎬 CineVerse Night
 
 **A cinematic movie-discovery experience built with React, TypeScript, and Tailwind CSS.**
