@@ -1,73 +1,126 @@
-# Welcome to your Lovable project
+# 🎬 CineVerse Night
 
-## Project info
+**A cinematic movie-discovery experience built with React, TypeScript, and Tailwind CSS.**
 
-**URL**: https://lovable.dev/projects/38716783-97fe-416c-9e77-17dbbab769eb
+CineVerse Night is a dark-themed movie browsing web application designed to make exploring films more engaging. Browse movies by genre, discover titles through search and filters, view detailed movie information, and build a personal watchlist through a clean, responsive interface.
 
-## How can I edit this code?
+🔗 **Live Preview:** [Open CineVerse Night on Lovable](https://lovable.dev/projects/38716783-97fe-416c-9e77-17dbbab769eb)
+💻 **Source Code:** [GitHub Repository](https://github.com/abihaha7/cine-verse-night)
 
-There are several ways of editing your application.
 
-**Use Lovable**
+## ✨ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/38716783-97fe-416c-9e77-17dbbab769eb) and start prompting.
+- **Cinematic Home Page** — Featured movie presentation and curated movie rows.
+- **Genre-Based Discovery** — Browse categories and explore movies within individual genres.
+- **Smart Movie Search** — Search by movie title, director, cast, or genre.
+- **Advanced Filtering & Sorting** — Narrow results by genre and release year, then sort by title, year, or rating.
+- **Movie Details** — Explore synopses, cast, directors, ratings, release years, and durations.
+- **Personal Watchlist** — Add or remove movies and switch between grid and list views.
+- **Video Player Interface** — Custom playback controls for play/pause, seeking, volume, playback speed, and fullscreen.
+- **Trailer Embeds** — View embedded YouTube trailers where available.
+- **Related Movie Recommendations** — Discover other titles that share genres.
+- **Responsive Navigation** — Browse the application through desktop and mobile navigation layouts.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+| Technology | Purpose |
+|---|---|
+| React 18 | Component-based user interface |
+| TypeScript | Type-safe application development |
+| Vite | Development server and production build tooling |
+| Tailwind CSS | Utility-first styling and responsive layouts |
+| shadcn/ui & Radix UI | Reusable interface components |
+| React Router | Client-side navigation |
+| Lucide React | Interface icons |
+| TanStack React Query | Server-state and data-fetching infrastructure |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- [Node.js](https://nodejs.org/) — preferably a current LTS release
+- npm, included with Node.js
+- Git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Installation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**1. Clone the repository**
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+git clone https://github.com/abihaha7/cine-verse-night.git
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+**2. Navigate to the project**
+
+```bash
+cd cine-verse-night
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open the local URL printed in your terminal to explore the application.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Project Structure
 
-**Use GitHub Codespaces**
+```text
+cine-verse-night/
+├── public/                 # Public static assets
+├── src/
+│   ├── components/         # Navbar, movie cards, player, and UI
+│   ├── contexts/           # Watchlist state management
+│   ├── data/               # Sample movie catalog and categories
+│   ├── hooks/              # Custom React hooks
+│   ├── lib/                # Shared utilities
+│   ├── pages/              # Home, search, categories, details, watchlist
+│   ├── types/              # TypeScript movie definitions
+│   ├── App.tsx             # Routes and application providers
+│   └── main.tsx            # Application entry point
+├── index.html
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── vite.config.ts
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🧪 Available Scripts
 
-## What technologies are used for this project?
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the local development server |
+| `npm run build` | Generate a production build |
+| `npm run build:dev` | Generate a development-mode build |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint checks |
 
-This project is built with:
+## 📝 Current Implementation Notes
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- The movie catalog uses locally defined sample data.
+- The watchlist currently uses in-memory React state; it is not persisted across page reloads.
+- The video player uses a sample MP4 source, so playback is a demonstration rather than a full-length movie-streaming service.
+- Subtitle controls currently display sample subtitle text rather than loading real subtitle tracks.
+- Trailer availability depends on the configured YouTube embed URLs.
 
-## How can I deploy this project?
+## 🔭 Potential Future Improvements
 
-Simply open [Lovable](https://lovable.dev/projects/38716783-97fe-416c-9e77-17dbbab769eb) and click on Share -> Publish.
+- Persist watchlists using browser storage or a database.
+- Integrate a movie API for dynamic metadata, artwork, and search.
+- Add user accounts and personalized recommendations.
+- Improve playback with configurable subtitle tracks and reliable media sources.
+- Add automated tests and accessibility improvements.
+- Deploy a production version with a dedicated project domain.
 
-## Can I connect a custom domain to my Lovable project?
+## 👩‍💻 Built With
 
-Yes, you can!
+CineVerse Night is a frontend project exploring component-based UI development, client-side routing, filtering and sorting, shared React state, and custom media-player controls.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+If you find the project interesting, feel free to explore the repository and share feedback.
